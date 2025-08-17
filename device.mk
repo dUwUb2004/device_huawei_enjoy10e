@@ -89,6 +89,7 @@ PRODUCT_PACKAGES += \
 # Logging
 PRODUCT_PACKAGES += \
     libimonitor \
+    libhwlog \
     libxcollie
 
 # Media
@@ -125,6 +126,10 @@ PRODUCT_PACKAGES += \
 # Recovery
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/init.recovery.mt6765.rc:recovery/root/init.recovery.mt6765.rc
+
+# Power
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/power/,$(TARGET_COPY_OUT_VENDOR)/etc)
 
 # Rootdir
 PRODUCT_PACKAGES += \
