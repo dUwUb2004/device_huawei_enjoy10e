@@ -10,6 +10,9 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 # Overlays
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
+# Project ID Quota
+$(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
+
 # Fastbootd
 PRODUCT_PACKAGES += \
     fastbootd
@@ -17,7 +20,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.fastboot@1.0-impl-mock \
     android.hardware.fastboot@1.0-impl-mock.recovery
-    
+
 # Recovery
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/init.recovery.mt6765.rc:recovery/root/init.recovery.mt6765.rc
