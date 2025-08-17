@@ -90,7 +90,13 @@ TARGET_BOARD_PLATFORM := mt6765
 
 # Recovery
 BOARD_INCLUDE_RECOVERY_DTBO := true
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.mt6765
 
+# Root
+BOARD_ROOT_EXTRA_FOLDERS += \
+    log \
+    sec_storage
+	
 # Releasetools
 TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)/releasetools
 
