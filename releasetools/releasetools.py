@@ -39,4 +39,5 @@ def OTA_InstallEnd(info):
   AddImage(info, "IMAGES", "vbmeta.img", "/dev/block/platform/bootdevice/by-name/vbmeta")
   AddImage(info, "IMAGES", "vbmeta_system.img", "/dev/block/platform/bootdevice/by-name/vbmeta_system")
   AddImage(info, "IMAGES", "vbmeta_vendor.img", "/dev/block/platform/bootdevice/by-name/vbmeta_vendor")
+  AddImage(info, "IMAGES", "super_empty.img", "/dev/block/platform/bootdevice/by-name/super")
   return
