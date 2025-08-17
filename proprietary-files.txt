@@ -1,5 +1,8 @@
 # Unpinned blobs from a53_a53_32-user 10 QP1A.190711.020 eng.root.20200509.191249 dev-keys
 
+# AEE
+vendor/lib/libaedv.so
+
 # Display
 vendor/bin/hw/vendor.mediatek.hardware.gpu@1.0-service
 vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service
