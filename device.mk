@@ -122,6 +122,10 @@ PRODUCT_PACKAGES += \
     init.mt6765.usb.rc \
     ueventd.mt6765.rc
 
+# Sensors
+PRODUCT_PACKAGES += \
+    android.frameworks.sensorservice@1.0.vendor
+    
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 29
 
