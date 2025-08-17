@@ -83,7 +83,7 @@ BUILD_BROKEN_DUP_RULES := true
 
 # Kernel
 TARGET_KERNEL_ARCH := arm64
-TARGET_KERNEL_SOURCE := kernel/huawei/enjoy10e
+TARGET_KERNEL_SOURCE := kernel/huawei/mt6765
 TARGET_KERNEL_CONFIG := merge_full_k62v1_64_mex_a32_defconfig
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 BOARD_KERNEL_SEPARATED_DTBO := true
