@@ -31,9 +31,20 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     disable_configstore
-    
+
 # Dynamic Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
+
+# Keymaster
+PRODUCT_PACKAGES += \
+    libkeymaster3device.vendor \
+    libkeystore-engine-wifi-hidl \
+    libkeystore-wifi-hidl
+
+# Logging
+PRODUCT_PACKAGES += \
+    libimonitor \
+    libxcollie
 
 # Overlays
 PRODUCT_ENFORCE_RRO_TARGETS := *
@@ -72,6 +83,7 @@ TARGET_SCREEN_WIDTH := 800
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
+    hardware/huawei
 
 # Inherit the proprietary files
 $(call inherit-product, vendor/huawei/enjoy10e/enjoy10e-vendor.mk)
