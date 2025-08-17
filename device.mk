@@ -10,6 +10,14 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 # Overlays
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
+# Fastbootd
+PRODUCT_PACKAGES += \
+    fastbootd
+
+PRODUCT_PACKAGES += \
+    android.hardware.fastboot@1.0-impl-mock \
+    android.hardware.fastboot@1.0-impl-mock.recovery
+    
 # Recovery
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/init.recovery.mt6765.rc:recovery/root/init.recovery.mt6765.rc
