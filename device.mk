@@ -1,0 +1,27 @@
+#
+# Copyright (C) 2025 The LineageOS Project
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
+# Overlays
+PRODUCT_ENFORCE_RRO_TARGETS := *
+
+# Recovery
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/etc/init.recovery.mt6765.rc:recovery/root/init.recovery.mt6765.rc
+
+# Shipping API level
+PRODUCT_SHIPPING_API_LEVEL := 29
+
+# Screen
+TARGET_SCREEN_DENSITY := 226
+TARGET_SCREEN_HEIGHT := 1280
+TARGET_SCREEN_WIDTH := 800
+
+# Soong namespaces
+PRODUCT_SOONG_NAMESPACES += \
+    $(LOCAL_PATH)
+
+# Inherit the proprietary files
+$(call inherit-product, vendor/huawei/enjoy10e/enjoy10e-vendor.mk)
