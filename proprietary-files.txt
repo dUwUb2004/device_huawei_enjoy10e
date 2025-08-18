@@ -361,7 +361,6 @@ vendor/lib/libgpu_aux.so
 vendor/lib/libgralloc_extra.so
 vendor/lib/libion_mtk.so
 vendor/lib/libion_ulit.so
-vendor/lib/libladder.so
 vendor/lib/libmemtrack_GL.so
 vendor/lib/libmpvr.so
 vendor/lib/libpq_cust_base.so
@@ -393,6 +392,9 @@ vendor/bin/hw/android.hardware.keymaster@3.0-service
 vendor/etc/init/android.hardware.keymaster@3.0-service.rc
 vendor/lib/hw/keystore.mt6765.so
 vendor/lib/hw/android.hardware.keymaster@3.0-impl.so
+
+# Ladder - from angelican-user-11-RP1A.200720.011-V12.5.3.0.RCSMIXM-release-keys
+vendor/lib/libladder.so|b3161af9c1ae115b467ed6d210355348717145c8
 
 # Media (OMX)
 vendor/lib/libHEVCdec_sa.ca7.android.so
