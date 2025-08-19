@@ -136,6 +136,7 @@ BOARD_ROOT_EXTRA_FOLDERS += \
     sec_storage
 
 # SEPolicy
+include device/mediatek/sepolicy/BoardSEPolicyConfig.mk
 SELINUX_IGNORE_NEVERALLOWS := true
 BOARD_VENDOR_SEPOLICY_DIRS += \
     $(DEVICE_PATH)/sepolicy/vendor
